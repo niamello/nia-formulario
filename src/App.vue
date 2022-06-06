@@ -1,12 +1,13 @@
 <template>
   <div id="app">
-    <h1>Bem vindo</h1>
-    <Texts :dados="'Sou um component'"/>
+    <h1></h1>
+    <Texts :dados="''"/>
   </div>
 </template>
 
+
 <script>
-import Texts from './component/Texts.vue'
+import Texts from './component/Texts.vue';
 
 export default {
   name: 'App',
@@ -17,12 +18,19 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Open+Sans&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+  font-family: 'inter', sans-serif;
 }
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
 </style>
